@@ -1,0 +1,15 @@
+.table {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  letter-spacing: 0.01em;
+  color: #323a47;
+  padding: 16px 24px;
+  display: grid;
+  border-bottom: 1px solid var(--header-color);
+  border-radius: var(--radius);
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}

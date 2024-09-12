@@ -1,0 +1,13 @@
+.backLinkWrapper {
+  display: flex;
+  align-items: center;
+  max-width: 100px;
+  width: 100%;
+  gap: 8px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: var(--font-base);
+  line-height: 157%;
+  letter-spacing: 0.01em;
+  color: #818387;
+}
