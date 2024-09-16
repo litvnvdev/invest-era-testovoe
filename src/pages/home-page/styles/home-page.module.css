@@ -1,0 +1,39 @@
+.homePageWrapper {
+  margin-top: 50px;
+  font-family: var(--second-family);
+}
+
+.selectBag {
+  display: flex;
+  gap: 24px;
+  border-bottom: var(--border);
+}
+
+.activeBtn {
+  cursor: pointer;
+  transition: 0.1s;
+  font-weight: 600;
+  font-weight: 700;
+  border-bottom: 3px solid var(--color-base);
+  border-radius: 2px;
+}
+.disabledBtn {
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--header-color);
+}
+
+.homePageContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.listLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--positive);
+}

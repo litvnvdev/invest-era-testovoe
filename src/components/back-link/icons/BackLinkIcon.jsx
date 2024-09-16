@@ -1,7 +1,7 @@
 export function BackLinkIcon() {
   return (
     <svg
-      width="9"
+      width="10"
       height="14"
       viewBox="0 0 9 14"
       fill="none"

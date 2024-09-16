@@ -1,0 +1,19 @@
+.notFoundWrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1080px;
+  width: 100%;
+  height: 50dvh;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--second-family);
+  font-size: var(--title);
+}
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}

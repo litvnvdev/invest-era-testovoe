@@ -1,0 +1,9 @@
+.button {
+  transition: 0.3s;
+  border: 2px solid var(--color-base);
+  border-radius: var(--radius);
+}
+.button:hover {
+  font-size: 15px;
+  background: var(--header-color);
+}

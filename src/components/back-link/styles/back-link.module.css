@@ -1,8 +1,6 @@
 .backLinkWrapper {
   display: flex;
   align-items: center;
-  max-width: 100px;
-  width: 100%;
   gap: 8px;
   font-family: var(--second-family);
   font-weight: 400;

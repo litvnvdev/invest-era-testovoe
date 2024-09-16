@@ -1,15 +1,96 @@
-.table {
+.tableWrapper {
   font-family: var(--font-family);
+  position: relative;
+  border: var(--border);
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  overflow-y: auto;
+  max-height: 85dvh;
+  margin-bottom: 56px;
+}
+.tableHeadWrapper {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: fit-content;
+  background: #ededed;
+}
+.fixedHead {
+  z-index: 2;
+  position: sticky;
+  background: #ededed;
+  left: 0;
+  padding-left: 16px;
+}
+
+.tableHead {
+  padding: 16px;
+  border-bottom: var(--border);
   font-weight: 600;
   font-size: 14px;
   line-height: 157%;
-  letter-spacing: 0.01em;
   color: #323a47;
-  padding: 16px 24px;
   display: grid;
-  border-bottom: 1px solid var(--header-color);
-  border-radius: var(--radius);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 200px repeat(13, 150px);
   align-items: center;
-  justify-items: center;
+}
+
+.tableRow {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57143;
+  letter-spacing: -0.01em;
+  width: fit-content;
+  padding: 16px;
+  border-bottom: var(--border);
+  border-right: var(--border);
+  display: grid;
+  grid-template-columns: 200px repeat(13, 150px);
+  align-items: center;
+}
+.tableRow:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+.fixed {
+  z-index: 2;
+  position: sticky;
+  left: 0;
+  padding-left: 16px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57143;
+  letter-spacing: -0.01em;
+  color: var(--color-base);
+  backdrop-filter: blur(3px);
+}
+.fixed:nth-child(even) {
+  background: black;
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.negative {
+  color: var(--negative);
+}
+.tableRowWrapper {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57143;
+  letter-spacing: -0.01em;
+  width: fit-content;
+  padding: 8px;
+  border-bottom: var(--border);
+  border-right: var(--border);
+  display: grid;
+  grid-template-columns: 200px repeat(13, 150px);
+  align-items: center;
+}
+.tableCell {
+  border-bottom: var(--border);
+  padding: 12px;
 }
