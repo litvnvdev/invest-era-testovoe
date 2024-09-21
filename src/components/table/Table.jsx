@@ -4,11 +4,10 @@ import { TableHead, TableRow } from "./components";
 import { TableCell } from "./components/table-cell/TableCell";
 import styles from "./styles/table.module.css";
 import { Loader } from "../loader";
+import { API_URL } from "../../consts";
 
 export function Table({ data }) {
-  const { isLoading } = useFetch(
-    "http://localhost:8000/api/tables/model-portfolio-usa/"
-  );
+  const { isLoading } = useFetch(`${API_URL}model-portfolio-usa/`);
 
   const renderDataTitle = Object.keys(data.slice(1, 2)[0]);
 
@@ -26,7 +25,7 @@ export function Table({ data }) {
   //====== Проверяем длину строки с запятой и убираем лишние цифры после запятой
   const checkForLengthComma = (title) => {
     if (title.includes(",")) {
-      return title.slice(0, Number(title.indexOf(",") + 3));
+      return title.slice(0, Number(title.indexOf(",") + 4));
     }
     return title;
   };

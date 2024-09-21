@@ -8,6 +8,7 @@ import { HOME_PAGE_DATA } from "../home-page/consts";
 import { useFetch } from "../../hooks/useFetch";
 import { Loader } from "../../components/loader";
 import { Error } from "../../components/error";
+import { API_URL } from "../../consts";
 
 export default function TablePage() {
   const { id } = useParams();
@@ -15,7 +16,7 @@ export default function TablePage() {
     isLoading,
     error,
     data: cells,
-  } = useFetch("http://localhost:8000/api/tables/model-portfolio-usaa/");
+  } = useFetch(`${API_URL}model-portfolio-usa/`);
   const data = Object.values(HOME_PAGE_DATA).map((data) => Object.values(data));
   const filteredData = data
     .map((item) => Object.values(item))
